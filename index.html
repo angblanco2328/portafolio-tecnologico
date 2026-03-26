@@ -32,10 +32,6 @@
             box-shadow: 0 6px 16px rgba(0,0,0,0.25);
         }
 
-        .iconos-contacto img {
-            margin-left: 10px;
-        }
-
         .stack {
             display: flex;
             flex-wrap: wrap;
@@ -51,6 +47,26 @@
             border-radius: 10px;
             box-shadow: 0 6px 16px rgba(0,0,0,0.18);
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table td, table th {
+            border: 1px solid #444;
+            padding: 10px;
+        }
+
+        table th {
+            background: #333;
+        }
+
+        .contacto a {
+            color: #fff;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -59,34 +75,181 @@
 
         <!-- ENCABEZADO -->
         <div class="tarjeta">
-            <h1>👋 Portafolio Tecnológico</h1>
-            <h2>Patricia Salazar Arancibia</h2>
-            <p>Administrativa • Traductora • Backend Trainee (Java & Spring Boot)</p>
-
-            <div class="iconos-contacto" style="text-align:right;">
-                <a href="mailto:angblanco@hotmail.com">
-                    <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg">
-                </a>
-                <a href="https://www.linkedin.com/in/patricia-salazar-697a56368/" target="_blank">
-                    <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
-                </a>
-                <a href="https://github.com/angblanco2328" target="_blank">
-                    <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
-                </a>
-            </div>
+            <h1>🌟 Portafolio Tecnológico</h1>
+            <h2>PATRICIA SALAZAR ARANCIBIA</h2>
+            <p>💼 Administrativa · Traductora · Backend Trainee (Java & Spring Boot)</p>
+            <p>🌱 En transición al mundo tecnológico, uniendo experiencia administrativa con desarrollo de software.</p>
         </div>
 
-        <!-- STACK TECNOLÓGICO -->
+        <!-- SOBRE MÍ -->
         <div class="tarjeta">
-            <h2>💻 Stack Tecnológico</h2>
+            <h2>🌿 Sobre mí</h2>
+            <p>Soy traductora inglés–español y profesional administrativa con más de diez años de experiencia en gestión de datos, documentación, atención de clientes y coordinación de procesos.</p>
+            <p>Actualmente estoy en transición al mundo tecnológico, especializándome en <strong>desarrollo backend con Java y Spring Boot</strong>.</p>
 
-            <div class="stack">
-                <div class="stack-item">
-                    <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
-                    <p><strong>Java 17 / 21</strong></p>
-                </div>
-            </div>
+            <p>Me interesa especialmente:</p>
+            <ul>
+                <li>Diseñar soluciones simples, claras y mantenibles</li>
+                <li>Integrar procesos administrativos con herramientas digitales</li>
+                <li>Documentar y comunicar de forma profesional y pedagógica</li>
+            </ul>
         </div>
+
+        <!-- TECNOLOGÍAS -->
+        <div class="tarjeta">
+            <h2>🧩 Tecnologías y herramientas</h2>
+
+            <table>
+                <tr>
+                    <th>Área</th>
+                    <th>Tecnologías / Herramientas</th>
+                </tr>
+                <tr>
+                    <td><strong>Lenguajes</strong></td>
+                    <td>Java · SQL</td>
+                </tr>
+                <tr>
+                    <td><strong>Frameworks</strong></td>
+                    <td>Spring Boot · Spring Data JPA · Thymeleaf · Maven</td>
+                </tr>
+                <tr>
+                    <td><strong>Bases de datos</strong></td>
+                    <td>MariaDB</td>
+                </tr>
+                <tr>
+                    <td><strong>Control de versiones</strong></td>
+                    <td>Git · GitHub</td>
+                </tr>
+                <tr>
+                    <td><strong>Entorno</strong></td>
+                    <td>VS Code</td>
+                </tr>
+                <tr>
+                    <td><strong>Otros</strong></td>
+                    <td>ERP Softland · Sistemas administrativos · Microsoft Office · Inglés avanzado · Francés intermedio</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- PROYECTO DESTACADO -->
+        <div class="tarjeta">
+            <h2>🚀 Proyecto técnico destacado</h2>
+            <h3>Gestión de Cursos – <strong>Módulo Matrículas</strong></h3>
+
+            <p><strong>Descripción:</strong> Aplicación web desarrollada con Java y Spring Boot para gestionar estudiantes, cursos y matrículas.</p>
+
+            <p>El módulo de Matrículas permite:</p>
+            <ul>
+                <li>Registrar inscripciones</li>
+                <li>Editar y eliminar registros</li>
+                <li>Visualizar información de forma clara y ordenada</li>
+            </ul>
+
+            <p><strong>Rol:</strong> Desarrollo backend y vistas con Thymeleaf.</p>
+
+            <p><strong>Tecnologías utilizadas:</strong> Java · Spring Boot · Spring Data JPA · Hibernate · MariaDB · Thymeleaf · Bootstrap · GitHub</p>
+
+            <p><strong>Repositorio:</strong> (agrega aquí tu enlace)</p>
+        </div>
+
+        <!-- CASO DE ESTUDIO -->
+        <div class="tarjeta">
+            <h2>📚 Caso de estudio</h2>
+            <h3>OTEC Primavera – Diseño de producto digital</h3>
+
+            <p><strong>Contexto:</strong> Diseño conceptual de un producto digital para una OTEC ficticia llamada <strong>OTEC Primavera</strong>, orientada al sector educativo–formativo.</p>
+
+            <p><strong>Enfoque del trabajo:</strong></p>
+            <ul>
+                <li>Análisis de necesidades académicas y administrativas</li>
+                <li>Definición de funcionalidades clave</li>
+                <li>Estructura de módulos y flujos de información</li>
+                <li>Visión de integración futura con sistemas de gestión y reportes</li>
+            </ul>
+        </div>
+
+        <!-- FODA -->
+        <div class="tarjeta">
+            <h2>📊 FODA profesional</h2>
+
+            <table>
+                <tr>
+                    <th>Fortalezas</th>
+                    <th>Oportunidades</th>
+                </tr>
+                <tr>
+                    <td>
+                        Comunicación clara y profesional<br>
+                        Organización y gestión de procesos<br>
+                        Aprendizaje rápido<br>
+                        Experiencia en sistemas administrativos<br>
+                        Orientación al detalle
+                    </td>
+                    <td>
+                        Crecimiento del sector tecnológico, fintech y edtech<br>
+                        Demanda de perfiles en transición hacia TI<br>
+                        Ecosistema Java activo<br>
+                        Modalidad de trabajo remoto e híbrido
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Debilidades</th>
+                    <th>Amenazas</th>
+                </tr>
+                <tr>
+                    <td>
+                        Experiencia técnica aún en desarrollo<br>
+                        Pocos proyectos de producción<br>
+                        Necesidad de profundizar en patrones de diseño y testing
+                    </td>
+                    <td>
+                        Competencia con perfiles más experimentados<br>
+                        Cambios rápidos de tecnologías<br>
+                        Procesos de selección exigentes
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- EXPERIENCIA -->
+        <div class="tarjeta">
+            <h2>📁 Experiencia profesional</h2>
+
+            <h3>🗂 Área administrativa</h3>
+            <ul>
+                <li>Gestión de datos, documentación y archivos</li>
+                <li>Atención a clientes internos y externos</li>
+                <li>Coordinación de procesos y apoyo a gerencias</li>
+                <li>Manejo de sistemas internos y comunicación profesional</li>
+            </ul>
+
+            <h3>🏨 Área hotelera</h3>
+            <ul>
+                <li>Atención a huéspedes</li>
+                <li>Coordinación operativa diaria</li>
+                <li>Soporte a equipos internacionales (incluyendo Proyecto ALMA)</li>
+            </ul>
+
+            <h3>🌍 Área de turismo</h3>
+            <ul>
+                <li>Organización de itinerarios y gestión de grupos</li>
+                <li>Orientación cultural e histórica</li>
+                <li>Apoyo logístico en terreno</li>
+            </ul>
+        </div>
+
+        <!-- CONTACTO -->
+        <div class="tarjeta contacto" style="text-align:center;">
+            <h2>📬 Contacto</h2>
+            <p>📎 <strong>LinkedIn:</strong> (agrega tu enlace)</p>
+            <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/angblanco2328">github.com/angblanco2328</a></p>
+            <p>✉️ <strong>Correo:</strong> (opcional)</p>
+        </div>
+
+        <p style="text-align:center; margin-top:30px; opacity:0.7;">
+            ✨ Portafolio en evolución constante, igual que mi camino en tecnología. ✨
+        </p>
 
     </div>
 </body>
