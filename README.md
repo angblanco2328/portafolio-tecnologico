@@ -1,3 +1,275 @@
+
+<!-- ENCABEZADO + ICONOS DE CONTACTO + FOTO -->
+<div style="display:flex; justify-content:space-between; align-items:center;">
+
+  <div>
+    <h1 style="margin-bottom:0;">🌞 Portafolio Tecnológico</h1>
+    <h2 style="margin-top:5px;">Patricia Salazar Arancibia</h2>
+    <p>Administrativa · Traductora · Backend Trainee (Java & Spring Boot)</p>
+  </div>
+
+  <!-- ICONOS DE CONTACTO ARRIBA A LA DERECHA -->
+  <div style="text-align:right;">
+    <a href="mailto:angblanco@hotmail.com" style="margin-left:10px;">
+      <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"/>
+    </a>
+
+    <a href="https://www.linkedin.com/in/patricia-salazar-697a56368/" target="_blank" style="margin-left:10px;">
+      <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"/>
+    </a>
+
+    <a href="https://github.com/angblanco2328" target="_blank" style="margin-left:10px;">
+      <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+    </a>
+  </div>
+
+</div>
+
+<!-- FOTO -->
+<img src="TU_URL_DE_FOTO"
+     alt="Foto de Patricia"
+     style="width:140px; height:140px; border-radius:50%; object-fit:cover; box-shadow:0 4px 10px rgba(0,0,0,0.25); margin-top:20px;" />
+
+<!-- FONDO GENERAL GRIS SUAVE -->
+<div style="background:#f2f4f7; padding:30px; border-radius:12px; margin-top:25px;">
+
+
+<!-- TECNOLOGÍAS PRINCIPALES -->
+<h2>🧰 Stack Tecnológico</h2>
+
+<div style="display:flex; flex-wrap:wrap; gap:20px; margin-top:20px;">
+
+  <div style="background:white; padding:20px; border-radius:14px; width:180px; text-align:center; box-shadow:0 6px 16px rgba(0,0,0,0.18); border:1px solid #e0e0e0;">
+    <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
+    <p style="font-weight:600; margin-top:10px;">Java 17 / 21</p>
+  </div>
+
+  <div style="background:white; padding:20px; border-radius:14px; width:180px; text-align:center; box-shadow:0 6px 16px rgba(0,0,0,0.18); border:1px solid #e0e0e0;">
+    <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"/>
+    <p style="font-weight:600; margin-top:10px;">Spring Boot 3</p>
+  </div>
+
+  <div style="background:white; padding:20px; border-radius:14px; width:180px; text-align:center; box-shadow:0 6px 16px rgba(0,0,0,0.18); border:1px solid #e0e0e0;">
+    <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg"/>
+    <p style="font-weight:600; margin-top:10px;">MariaDB</p>
+  </div>
+
+  <div style="background:white; padding:20px; border-radius:14px; width:180px; text-align:center; box-shadow:0 6px 16px rgba(0,0,0,0.18); border:1px solid #e0e0e0;">
+    <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/thymeleaf/thymeleaf-original.svg"/>
+    <p style="font-weight:600; margin-top:10px;">Thymeleaf</p>
+  </div>
+
+  <div style="background:white; padding:20px; border-radius:14px; width:180px; text-align:center; box-shadow:0 6px 16px rgba(0,0,0,0.18); border:1px solid #e0e0e0;">
+    <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
+    <p style="font-weight:600; margin-top:10px;">Git / GitHub</p>
+  </div>
+
+  <div style="background:white; padding:20px; border-radius:14px; width:180px; text-align:center; box-shadow:0 6px 16px rgba(0,0,0,0.18); border:1px solid #e0e0e0;">
+    <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/>
+    <p style="font-weight:600; margin-top:10px;">VS Code</p>
+  </div>
+
+</div>
+
+
+<!-- SOBRE MÍ -->
+<h2 style="margin-top:40px;">🌿 Sobre mí</h2>
+
+<p>
+Soy traductora inglés–español y profesional administrativa con más de diez años de experiencia en gestión de datos, documentación, atención a clientes y coordinación de procesos.  
+Actualmente estoy en transición al mundo tecnológico, especializándome en <strong>desarrollo backend con Java y Spring Boot</strong>.
+</p>
+
+<ul>
+  <li>Diseñar soluciones simples, claras y mantenibles</li>
+  <li>Integrar procesos administrativos con herramientas digitales</li>
+  <li>Documentar y comunicar de forma profesional y pedagógica</li>
+</ul>
+
+
+<!-- FODA -->
+<h2 style="margin-top:40px;">🧭 FODA</h2>
+
+<div style="display:flex; flex-wrap:wrap; gap:16px;">
+
+  <details style="flex:1; min-width:220px; background:#f5fff5; padding:12px 16px; border-radius:10px; border:1px solid #cde8cd;">
+    <summary><strong>💪 Fortalezas</strong></summary>
+    <ul>
+      <li>Comunicación clara y profesional</li>
+      <li>Organización y gestión de datos</li>
+      <li>Aprendizaje rápido y adaptable</li>
+      <li>Experiencia administrativa sólida</li>
+    </ul>
+  </details>
+
+  <details style="flex:1; min-width:220px; background:#f5f9ff; padding:12px 16px; border-radius:10px; border:1px solid #c7d8f5;">
+    <summary><strong>🌱 Oportunidades</strong></summary>
+    <ul>
+      <li>Crecimiento del sector tecnológico</li>
+      <li>Demanda de perfiles en transición</li>
+      <li>Ecosistema Java en expansión</li>
+      <li>Trabajo remoto/híbrido</li>
+    </ul>
+  </details>
+
+  <details style="flex:1; min-width:220px; background:#fff8f5; padding:12px 16px; border-radius:10px; border:1px solid #f0d0c0;">
+    <summary><strong>⚠️ Debilidades</strong></summary>
+    <ul>
+      <li>Pocos proyectos productivos aún</li>
+      <li>Profundizar en patrones y testing</li>
+    </ul>
+  </details>
+
+  <details style="flex:1; min-width:220px; background:#fff5f7; padding:12px 16px; border-radius:10px; border:1px solid #f0c0cf;">
+    <summary><strong>🔥 Amenazas</strong></summary>
+    <ul>
+      <li>Competencia con perfiles senior</li>
+      <li>Rápida evolución de tecnologías</li>
+      <li>Procesos de selección exigentes</li>
+    </ul>
+  </details>
+
+</div>
+
+
+<!-- EXPERIENCIA PROFESIONAL -->
+<h2 style="margin-top:40px;">💼 Experiencia profesional</h2>
+
+<details style="margin-bottom:10px;">
+  <summary><strong>Área administrativa</strong></summary>
+  <p>Gestión de datos, documentación, atención a clientes, coordinación de procesos y uso de ERP Softland.</p>
+</details>
+
+<details style="margin-bottom:10px;">
+  <summary><strong>Traducción inglés–español</strong></summary>
+  <p>Traducción técnica, documentación interna, manuales y material de apoyo.</p>
+</details>
+
+<details style="margin-bottom:10px;">
+  <summary><strong>Backend Trainee (Java & Spring Boot)</strong></summary>
+  <p>Desarrollo de aplicaciones web con Java, Spring Boot, JPA, Thymeleaf y MariaDB.</p>
+</details>
+
+
+<!-- PROYECTO DESTACADO -->
+<h2 style="margin-top:40px;">🚀 Proyecto técnico destacado</h2>
+
+<details>
+  <summary><strong>Gestión de Cursos – Módulo Matrículas</strong></summary>
+  <p>Aplicación web para gestionar estudiantes, cursos y matrículas.</p>
+  <ul>
+    <li>Registro, edición y eliminación de matrículas</li>
+    <li>Listados claros y ordenados</li>
+    <li>Integración con base de datos MariaDB</li>
+  </ul>
+  <p><strong>Rol:</strong> Backend + vistas con Thymeleaf</p>
+  <p><strong>Stack:</strong> Java · Spring Boot · JPA · MariaDB · Thymeleaf · Bootstrap</p>
+</details>
+
+
+</div> <!-- cierre del fondo gris -->
+
+
+<!-- SOBRE MÍ -->
+<h2 style="margin-top:40px;">🌿 Sobre mí</h2>
+
+<p>
+Soy traductora inglés–español y profesional administrativa con más de diez años de experiencia en gestión de datos, documentación, atención a clientes y coordinación de procesos.  
+Actualmente estoy en transición al mundo tecnológico, especializándome en <strong>desarrollo backend con Java y Spring Boot</strong>.
+</p>
+
+<ul>
+  <li>Diseñar soluciones simples, claras y mantenibles</li>
+  <li>Integrar procesos administrativos con herramientas digitales</li>
+  <li>Documentar y comunicar de forma profesional y pedagógica</li>
+</ul>
+
+
+<!-- FODA -->
+<h2 style="margin-top:40px;">🧭 FODA</h2>
+
+<div style="display:flex; flex-wrap:wrap; gap:16px;">
+
+  <details style="flex:1; min-width:220px; background:#f5fff5; padding:12px 16px; border-radius:10px; border:1px solid #cde8cd;">
+    <summary><strong>💪 Fortalezas</strong></summary>
+    <ul>
+      <li>Comunicación clara y profesional</li>
+      <li>Organización y gestión de datos</li>
+      <li>Aprendizaje rápido y adaptable</li>
+      <li>Experiencia administrativa sólida</li>
+    </ul>
+  </details>
+
+  <details style="flex:1; min-width:220px; background:#f5f9ff; padding:12px 16px; border-radius:10px; border:1px solid #c7d8f5;">
+    <summary><strong>🌱 Oportunidades</strong></summary>
+    <ul>
+      <li>Crecimiento del sector tecnológico</li>
+      <li>Demanda de perfiles en transición</li>
+      <li>Ecosistema Java en expansión</li>
+      <li>Trabajo remoto/híbrido</li>
+    </ul>
+  </details>
+
+  <details style="flex:1; min-width:220px; background:#fff8f5; padding:12px 16px; border-radius:10px; border:1px solid #f0d0c0;">
+    <summary><strong>⚠️ Debilidades</strong></summary>
+    <ul>
+      <li>Pocos proyectos productivos aún</li>
+      <li>Profundizar en patrones y testing</li>
+    </ul>
+  </details>
+
+  <details style="flex:1; min-width:220px; background:#fff5f7; padding:12px 16px; border-radius:10px; border:1px solid #f0c0cf;">
+    <summary><strong>🔥 Amenazas</strong></summary>
+    <ul>
+      <li>Competencia con perfiles senior</li>
+      <li>Rápida evolución de tecnologías</li>
+      <li>Procesos de selección exigentes</li>
+    </ul>
+  </details>
+
+</div>
+
+
+<!-- EXPERIENCIA PROFESIONAL -->
+<h2 style="margin-top:40px;">💼 Experiencia profesional</h2>
+
+<details style="margin-bottom:10px;">
+  <summary><strong>Área administrativa</strong></summary>
+  <p>Gestión de datos, documentación, atención a clientes, coordinación de procesos y uso de ERP Softland.</p>
+</details>
+
+<details style="margin-bottom:10px;">
+  <summary><strong>Traducción inglés–español</strong></summary>
+  <p>Traducción técnica, documentación interna, manuales y material de apoyo.</p>
+</details>
+
+<details style="margin-bottom:10px;">
+  <summary><strong>Backend Trainee (Java & Spring Boot)</strong></summary>
+  <p>Desarrollo de aplicaciones web con Java, Spring Boot, JPA, Thymeleaf y MariaDB.</p>
+</details>
+
+
+<!-- PROYECTO DESTACADO -->
+<h2 style="margin-top:40px;">🚀 Proyecto técnico destacado</h2>
+
+<details>
+  <summary><strong>Gestión de Cursos – Módulo Matrículas</strong></summary>
+  <p>Aplicación web para gestionar estudiantes, cursos y matrículas.</p>
+  <ul>
+    <li>Registro, edición y eliminación de matrículas</li>
+    <li>Listados claros y ordenados</li>
+    <li>Integración con base de datos MariaDB</li>
+  </ul>
+  <p><strong>Rol:</strong> Backend + vistas con Thymeleaf</p>
+  <p><strong>Stack:</strong> Java · Spring Boot · JPA · MariaDB · Thymeleaf · Bootstrap</p>
+</details>
+
+
+</div> <!-- cierre del fondo gris -->
+
+
+
+
 🌞 PORTAFOLIO TECNOLÓGICO
 
 PATRICIA SALAZAR ARANCIBIA
@@ -7,46 +279,11 @@ PATRICIA SALAZAR ARANCIBIA
 
 
 ---
-🎨 Tecnologías principales
 
-<h2>🧰 Stack Tecnológico</h2>
-
-<div style="display:flex; flex-wrap:wrap; gap:20px; margin-top:20px;">
-
-  <div style="background:white; padding:18px; border-radius:12px; width:180px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.12);">
-    <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
-    <p style="font-weight:600; margin-top:10px;">Java 17 / 21</p>
-  </div>
-
-  <div style="background:white; padding:18px; border-radius:12px; width:180px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.12);">
-    <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"/>
-    <p style="font-weight:600; margin-top:10px;">Spring Boot 3</p>
-  </div>
-
-  <div style="background:white; padding:18px; border-radius:12px; width:180px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.12);">
-    <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg"/>
-    <p style="font-weight:600; margin-top:10px;">MariaDB</p>
-  </div>
-
-  <div style="background:white; padding:18px; border-radius:12px; width:180px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.12);">
-    <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/thymeleaf/thymeleaf-original.svg"/>
-    <p style="font-weight:600; margin-top:10px;">Thymeleaf</p>
-  </div>
-
-  <div style="background:white; padding:18px; border-radius:12px; width:180px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.12);">
-    <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
-    <p style="font-weight:600; margin-top:10px;">Git / GitHub</p>
-  </div>
-
-  <div style="background:white; padding:18px; border-radius:12px; width:180px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.12);">
-    <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/>
-    <p style="font-weight:600; margin-top:10px;">VS Code</p>
-  </div>
-
-</div>
 
 
  🌿 Sobre mí
+
 Soy traductora inglés–español y profesional administrativa con más de diez años de experiencia en gestión de datos, documentación, atención a clientes y coordinación de procesos.
 Actualmente estoy en transición al mundo tecnológico, especializándome en desarrollo front-end, backend con Java y Spring Boot.
 
@@ -101,15 +338,13 @@ Me interesa especialmente:
 </div>
 
 
-🍀 Tecnologías y herramientas
 
-<div style="background:#eef7ff; padding:20px; border-radius:12px;">
 
 <h3>🍀 Tecnologías y herramientas</h3>
 
 <div style="background:#eef7ff; padding:20px; border-radius:12px;">
 
-<h3>🍀 Tecnologías y herramientas</h3>
+
 
 <table>
 <tr>
@@ -311,8 +546,6 @@ Este caso de estudio conecta mi experiencia administrativa con la creación de s
     <strong>GitHub</strong>
   </a>
 </p>
-🐙 **GitHub:**https://github.com/angblanco2328  
-
 
 
 </div>
