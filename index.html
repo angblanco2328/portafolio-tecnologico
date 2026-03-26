@@ -1,33 +1,93 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
-    <title>Portafolio Tecnológico</title>
-    <style>
-      body {
-        background:#1c1f26;
-        color:white;
-        margin:0;
-        padding:0;
-        font-family: Arial, sans-serif;
-      }
-      .contenedor {
-        max-width: 1100px;
-        margin: auto;
-        padding: 40px;
-      }
-      iframe {
-        width: 100%;
-        height: 100vh;
-        border: none;
-        background: #1c1f26;
-      }
-    </style>
-  </head>
+    <title>Portafolio Tecnológico - Patricia Salazar</title>
 
-  <body>
+    <style>
+        body {
+            background: #1c1f26;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .contenedor {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px;
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+
+        .tarjeta {
+            background: #2a2f3a;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+        }
+
+        .iconos-contacto img {
+            margin-left: 10px;
+        }
+
+        .stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .stack-item {
+            background: #ffffff;
+            color: #000;
+            padding: 20px;
+            width: 180px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+        }
+    </style>
+</head>
+
+<body>
     <div class="contenedor">
-      <iframe src="README.md"></iframe>
+
+        <!-- ENCABEZADO -->
+        <div class="tarjeta">
+            <h1>👋 Portafolio Tecnológico</h1>
+            <h2>Patricia Salazar Arancibia</h2>
+            <p>Administrativa • Traductora • Backend Trainee (Java & Spring Boot)</p>
+
+            <div class="iconos-contacto" style="text-align:right;">
+                <a href="mailto:angblanco@hotmail.com">
+                    <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg">
+                </a>
+                <a href="https://www.linkedin.com/in/patricia-salazar-697a56368/" target="_blank">
+                    <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
+                </a>
+                <a href="https://github.com/angblanco2328" target="_blank">
+                    <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+                </a>
+            </div>
+        </div>
+
+        <!-- STACK TECNOLÓGICO -->
+        <div class="tarjeta">
+            <h2>💻 Stack Tecnológico</h2>
+
+            <div class="stack">
+                <div class="stack-item">
+                    <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+                    <p><strong>Java 17 / 21</strong></p>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </body>
+</body>
 </html>
