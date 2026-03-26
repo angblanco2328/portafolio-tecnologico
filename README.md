@@ -1,3 +1,8 @@
+<style>
+  header h1, header h1 a {
+    display:none !important;
+  }
+</style>
 
 <!-- ENCABEZADO + ICONOS DE CONTACTO + FOTO -->
 <div style="display:flex; justify-content:space-between; align-items:center;">
