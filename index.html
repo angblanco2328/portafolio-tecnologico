@@ -5,6 +5,10 @@
     <title>Portafolio Tecnológico - Patricia Salazar</title>
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             background: #1c1f26;
             color: #f5f5f5;
@@ -14,16 +18,14 @@
             line-height: 1.6;
         }
 
+        /* CONTENEDOR GENERAL */
         .contenedor {
             max-width: 1100px;
             margin: auto;
             padding: 40px;
         }
 
-        h1, h2, h3 {
-            margin-top: 0;
-        }
-
+        /* TARJETAS */
         .tarjeta {
             background: #2a2f3a;
             padding: 25px;
@@ -32,22 +34,7 @@
             box-shadow: 0 6px 16px rgba(0,0,0,0.25);
         }
 
-        .stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .stack-item {
-            background: #ffffff;
-            color: #000;
-            padding: 20px;
-            width: 180px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 6px 16px rgba(0,0,0,0.18);
-        }
-
+        /* TABLAS */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -63,14 +50,58 @@
             background: #333;
         }
 
-        .contacto a {
+        /* MENÚ SUPERIOR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #11141a;
+            padding: 15px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        }
+
+        nav a {
             color: #fff;
+            text-decoration: none;
             font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav a:hover {
+            color: #4da3ff;
         }
     </style>
 </head>
 
 <body>
+
+    <!-- MENÚ SUPERIOR -->
+    <nav>
+        <div style="max-width: 1100px; margin: auto;">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#foda">FODA</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- ESPACIADO PARA QUE EL MENÚ NO TAPE EL CONTENIDO -->
+    <div style="height: 80px;"></div>
+
+    <!-- FOTO DE PERFIL -->
+    <section id="foto" style="text-align:center; margin-bottom:40px;">
+        <img src="TU_URL_DE_FOTO"
+             alt="Foto de Patricia"
+             style="
+                width:160px;
+                height:160px;
+                border-radius:50%;
+                object-fit:cover;
+                box-shadow:0 4px 15px rgba(0,0,0,0.35);
+                border:3px solid #fff;
+             ">
+    </section>
+
     <div class="contenedor">
 
         <!-- ENCABEZADO -->
@@ -82,7 +113,7 @@
         </div>
 
         <!-- SOBRE MÍ -->
-        <div class="tarjeta">
+        <div class="tarjeta" id="sobre-mi">
             <h2>🌿 Sobre mí</h2>
             <p>Soy traductora inglés–español y profesional administrativa con más de diez años de experiencia en gestión de datos, documentación, atención de clientes y coordinación de procesos.</p>
             <p>Actualmente estoy en transición al mundo tecnológico, especializándome en <strong>desarrollo backend con Java y Spring Boot</strong>.</p>
@@ -169,7 +200,7 @@
         </div>
 
         <!-- FODA -->
-        <div class="tarjeta">
+        <div class="tarjeta" id="foda">
             <h2>📊 FODA profesional</h2>
 
             <table>
@@ -240,10 +271,10 @@
         </div>
 
         <!-- CONTACTO -->
-        <div class="tarjeta contacto" style="text-align:center;">
+        <div class="tarjeta" id="contacto" style="text-align:center;">
             <h2>📬 Contacto</h2>
             <p>📎 <strong>LinkedIn:</strong> (agrega tu enlace)</p>
-            <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/angblanco2328">github.com/angblanco2328</a></p>
+            <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/angblanco2328" style="color:#4da3ff;">github.com/angblanco2328</a></p>
             <p>✉️ <strong>Correo:</strong> (opcional)</p>
         </div>
 
