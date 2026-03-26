@@ -10,13 +10,23 @@
 ---
 
 <!-- BADGES TECNOLÓGICOS -->
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)]()
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)]()
-[![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)]()
-[![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white)]()
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)]()
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)]()
+<div align="center">
 
+<!-- FILA 1 -->
+<img height="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" /> 
+<img height="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />
+<img height="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" />
+<img height="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/thymeleaf/thymeleaf-original.svg" />
+
+<br><br>
+
+<!-- FILA 2 -->
+<img height="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+<img height="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+<img height="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+<img height="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+
+</div>
 ---
 
 </div>
@@ -135,9 +145,9 @@ Este caso de estudio conecta mi experiencia administrativa con la creación de s
 
 <div align="center">
 
-📎 **LinkedIn:** *([aquí pegas tu enlace de LinkedIn](https://www.linkedin.com/in/patricia-salazar-697a56368/))*  
+📎 **LinkedIn:** *https://www.linkedin.com/in/patricia-salazar-697a56368/  
 
-🐙 **GitHub:** [github.com/angblanco2328](https://github.com/angblanco2328)  
+🐙 **GitHub:**https://github.com/angblanco2328  
 
 
 
