@@ -95,10 +95,12 @@ section {
     margin-top: 40px;
 }
 
+/* Íconos blancos en el header */
 .header-icons img {
     height: 32px;
     margin: 0 8px;
     transition: 0.3s;
+    filter: brightness(0) invert(1);
 }
 
 .header-icons img:hover {
@@ -169,6 +171,17 @@ section {
 .oportunidad { border-left: 6px solid #10B981; }
 .debilidad { border-left: 6px solid #FBBF24; }
 .amenaza { border-left: 6px solid #EF4444; }
+
+/* ---------------------- */
+/* ÍCONOS DE CONTACTO */
+/* ---------------------- */
+
+.contacto-icono {
+    height: 28px;
+    filter: brightness(0) invert(1);
+    margin-right: 8px;
+    vertical-align: middle;
+}
 
 /* ---------------------- */
 /* FRASE DESTACADA */
@@ -433,15 +446,21 @@ Actualmente estoy en transición al mundo tecnológico, especializándome en des
 <h2>✉️ Contacto</h2>
 
 <p>
-<a href="https://www.linkedin.com/in/patricia-salazar-697a56368/" target="_blank" style="color:#4da8da;">
-LinkedIn
-</a>
+    <img class="contacto-icono" 
+         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
+    <a href="https://www.linkedin.com/in/patricia-salazar-697a56368/" 
+       target="_blank" style="color:#4da8da;">
+       LinkedIn
+    </a>
 </p>
 
 <p>
-<a href="https://github.com/angblanco2328" target="_blank" style="color:#4da8da;">
-GitHub
-</a>
+    <img class="contacto-icono" 
+         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+    <a href="https://github.com/angblanco2328" 
+       target="_blank" style="color:#4da8da;">
+       GitHub
+    </a>
 </p>
 
 </section>
