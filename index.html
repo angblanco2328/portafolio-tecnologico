@@ -32,13 +32,13 @@ h1, h2, h3 {
 /* ---------------------- */
 
 h2 {
-    color: #4da8da; /* Azul petróleo */
+    color: #4da8da;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 h3 {
-    color: #b388ff; /* Morado elegante */
+    color: #b388ff;
     font-weight: 600;
 }
 
@@ -95,12 +95,20 @@ section {
     margin-top: 40px;
 }
 
-/* Íconos blancos en el header */
 .header-icons img {
     height: 32px;
     margin: 0 8px;
     transition: 0.3s;
+}
+
+/* GitHub blanco */
+.icon-github {
     filter: brightness(0) invert(1);
+}
+
+/* LinkedIn azul */
+.icon-linkedin {
+    filter: none;
 }
 
 .header-icons img:hover {
@@ -166,7 +174,6 @@ section {
     gap: 8px;
 }
 
-/* Bordes por categoría */
 .fortaleza { border-left: 6px solid #3B82F6; }
 .oportunidad { border-left: 6px solid #10B981; }
 .debilidad { border-left: 6px solid #FBBF24; }
@@ -178,9 +185,18 @@ section {
 
 .contacto-icono {
     height: 28px;
-    filter: brightness(0) invert(1);
     margin-right: 8px;
     vertical-align: middle;
+}
+
+/* GitHub blanco */
+.contacto-github {
+    filter: brightness(0) invert(1);
+}
+
+/* LinkedIn azul */
+.contacto-linkedin {
+    filter: none;
 }
 
 /* ---------------------- */
@@ -235,11 +251,13 @@ footer {
 <div class="header-icons">
 
 <a href="https://www.linkedin.com/in/patricia-salazar-697a56368/" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
+    <img class="icon-linkedin" 
+         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
 </a>
 
 <a href="https://github.com/angblanco2328" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+    <img class="icon-github" 
+         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
 </a>
 
 </div>
@@ -446,7 +464,7 @@ Actualmente estoy en transición al mundo tecnológico, especializándome en des
 <h2>✉️ Contacto</h2>
 
 <p>
-    <img class="contacto-icono" 
+    <img class="contacto-icono contacto-linkedin" 
          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
     <a href="https://www.linkedin.com/in/patricia-salazar-697a56368/" 
        target="_blank" style="color:#4da8da;">
@@ -455,7 +473,7 @@ Actualmente estoy en transición al mundo tecnológico, especializándome en des
 </p>
 
 <p>
-    <img class="contacto-icono" 
+    <img class="contacto-icono contacto-github" 
          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
     <a href="https://github.com/angblanco2328" 
        target="_blank" style="color:#4da8da;">
