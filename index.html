@@ -1,619 +1,427 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Portafolio Tecnológico - Patricia Salazar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio Tecnológico – Patricia Salazar</title>
 
-    <!-- TIPOGRAFÍA MODERNA -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
+/* ---------------------- */
+/* ESTILOS GENERALES */
+/* ---------------------- */
 
-        :root {
-            --bg-main: #0f172a;
-            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 40%, #020617 100%);
-            --card-bg: rgba(15, 23, 42, 0.85);
-            --card-border: rgba(148, 163, 184, 0.4);
-            --text-main: #e5e7eb;
-            --accent: #38bdf8;
-            --accent-soft: rgba(56, 189, 248, 0.2);
-        }
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #1a1a1a; /* Fondo gris carbón */
+    color: #f5f5f5;
+    line-height: 1.6;
+}
 
-        body.light {
-            --bg-main: #f3f4f6;
-            --bg-gradient: linear-gradient(135deg, #e5e7eb 0%, #f9fafb 40%, #d1d5db 100%);
-            --card-bg: rgba(255, 255, 255, 0.85);
-            --card-border: rgba(148, 163, 184, 0.6);
-            --text-main: #111827;
-            --accent: #2563eb;
-            --accent-soft: rgba(37, 99, 235, 0.12);
-        }
+h1, h2, h3 {
+    margin-top: 0;
+}
 
-        body {
-            background: var(--bg-gradient);
-            color: var(--text-main);
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            transition: background 0.5s ease, color 0.5s ease;
-        }
+/* ---------------------- */
+/* MENÚ SUPERIOR */
+/* ---------------------- */
 
-        /* ANIMACIONES */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeIn 0.8s ease forwards;
-        }
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #2a2a2a; /* un poco más claro para destacar */
+    padding: 12px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
 
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
 
-        /* CONTENEDOR GENERAL */
-        .contenedor {
-            max-width: 1100px;
-            margin: auto;
-            padding: 40px 20px 60px;
-        }
+nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
 
-        /* TARJETAS Y ACORDEONES (GLASSMORPHISM) */
-        .tarjeta,
-        .acordeon {
-            background: var(--card-bg);
-            border-radius: 16px;
-            margin-bottom: 25px;
-            box-shadow: 0 18px 45px rgba(15, 23, 42, 0.6);
-            overflow: hidden;
-            animation: fadeIn 0.8s ease forwards;
-            border: 1px solid var(--card-border);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-        }
+nav a:hover {
+    color: #4f9cf9;
+}
 
-        .tarjeta:hover,
-        .acordeon:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 24px 60px rgba(15, 23, 42, 0.8);
-            border-color: var(--accent-soft);
-        }
+/* ---------------------- */
+/* CONTENEDOR GENERAL */
+/* ---------------------- */
 
-        /* ACORDEÓN */
-        .acordeon-titulo {
-            padding: 20px 24px;
-            cursor: pointer;
-            font-size: 22px;
-            font-weight: 600;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            letter-spacing: 0.5px;
-        }
+section {
+    max-width: 900px;
+    margin: 120px auto 60px auto;
+    padding: 20px;
+}
 
-        .acordeon-titulo:hover {
-            background: var(--accent-soft);
-        }
+/* ---------------------- */
+/* HEADER */
+/* ---------------------- */
 
-        .acordeon-contenido {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.35s ease;
-            padding: 0 24px;
-        }
+.header-box {
+    text-align: center;
+    margin-top: 40px;
+}
 
-        .acordeon-contenido.abierto {
-            padding: 20px 24px 24px;
-        }
+.header-icons img {
+    height: 32px;
+    margin: 0 8px;
+    transition: 0.3s;
+}
 
-        .flecha {
-            transition: transform 0.3s ease;
-            font-size: 18px;
-        }
+.header-icons img:hover {
+    transform: scale(1.15);
+}
 
-        .flecha.abierta {
-            transform: rotate(90deg);
-        }
+/* FOTO */
 
-        /* TABLAS */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-            font-size: 14px;
-        }
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
 
-        table td, table th {
-            border: 1px solid rgba(148, 163, 184, 0.4);
-            padding: 10px;
-        }
+/* ---------------------- */
+/* TARJETAS GENERALES */
+/* ---------------------- */
 
-        table th {
-            background: rgba(15, 23, 42, 0.7);
-        }
+.card {
+    background: #ffffff;
+    color: #1a1a1a;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    text-align: center;
+}
 
-        body.light table th {
-            background: rgba(209, 213, 219, 0.7);
-        }
+/* ---------------------- */
+/* STACK TECNOLÓGICO */
+/* ---------------------- */
 
-        /* MENÚ SUPERIOR */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(15, 23, 42, 0.95);
-            padding: 12px 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(15, 23, 42, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
+.stack-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
-        body.light nav {
-            background: rgba(243, 244, 246, 0.95);
-            box-shadow: 0 2px 10px rgba(148, 163, 184, 0.6);
-        }
+.stack-card {
+    background: #ffffff;
+    width: 180px;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
 
-        .nav-inner {
-            max-width: 1100px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-        }
+.stack-card img {
+    height: 45px;
+}
 
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 24px;
-        }
+/* ---------------------- */
+/* FODA CANVAS TECH */
+/* ---------------------- */
 
-        nav a {
-            color: #f9fafb;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            transition: color 0.3s ease;
-        }
+.foda-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 25px;
+}
 
-        body.light nav a {
-            color: #111827;
-        }
+.foda-card {
+    background: #ffffff;
+    color: #1a1a1a;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
 
-        nav a:hover {
-            color: var(--accent);
-        }
+.foda-card h3 {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
-        /* BOTÓN MODO CLARO/OSCURO */
-        .toggle-btn {
-            border: 1px solid rgba(148, 163, 184, 0.6);
-            background: transparent;
-            color: #e5e7eb;
-            padding: 6px 12px;
-            border-radius: 999px;
-            font-size: 12px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-        }
+/* Bordes por categoría */
+.fortaleza { border-left: 6px solid #3B82F6; }
+.oportunidad { border-left: 6px solid #10B981; }
+.debilidad { border-left: 6px solid #FBBF24; }
+.amenaza { border-left: 6px solid #EF4444; }
 
-        body.light .toggle-btn {
-            color: #111827;
-        }
+/* ---------------------- */
+/* FOOTER */
+/* ---------------------- */
 
-        .toggle-btn:hover {
-            background: var(--accent-soft);
-            border-color: var(--accent);
-        }
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #cccccc;
+    margin-top: 40px;
+}
 
-        /* FOTO PERFIL */
-        #foto img {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        #foto img:hover {
-            transform: translateY(-4px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.8);
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 30px;
-            opacity: 0.7;
-            font-size: 14px;
-        }
-
-        /* BOTÓN VOLVER ARRIBA */
-        #backToTop {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            width: 42px;
-            height: 42px;
-            border-radius: 999px;
-            border: none;
-            background: var(--accent);
-            color: #0b1120;
-            font-weight: 700;
-            cursor: pointer;
-            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.8);
-            display: none;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-            z-index: 999;
-        }
-
-        #backToTop:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.9);
-            background: #0ea5e9;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            .nav-inner {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 8px;
-            }
-
-            .nav-links {
-                width: 100%;
-                justify-content: flex-start;
-                flex-wrap: wrap;
-                gap: 12px;
-            }
-
-            .contenedor {
-                padding: 30px 16px 50px;
-            }
-
-            .acordeon-titulo {
-                font-size: 18px;
-            }
-
-            #foto img {
-                width: 150px;
-                height: 150px;
-            }
-        }
-    </style>
+</style>
 </head>
 
 <body>
 
-    <!-- MENÚ SUPERIOR -->
-    <nav>
-        <div class="nav-inner">
-            <div style="font-weight:700; font-size:14px; letter-spacing:0.12em; text-transform:uppercase;">
-                Portafolio · Patricia Salazar
-            </div>
-            <div class="nav-links">
-                <a href="#sobre-mi">Sobre mí</a>
-                <a href="#foda">FODA</a>
-                <a href="#contacto">Contacto</a>
-                <button class="toggle-btn" id="toggleTheme">
-                    <span>☾ / ☀</span>
-                    <span>Modo</span>
-                </button>
-            </div>
-        </div>
-    </nav>
+<!-- ---------------------- -->
+<!-- MENÚ SUPERIOR -->
+<!-- ---------------------- -->
 
-    <!-- ESPACIADO PARA QUE EL MENÚ NO TAPE EL CONTENIDO -->
-    <div style="height: 80px;"></div>
+<nav>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#foda">FODA</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#proyecto">Proyecto</a></li>
+        <li><a href="#caso-estudio">Caso de estudio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
 
-    <!-- FOTO DE PERFIL -->
-    <section id="foto" class="fade-in" style="text-align:center; margin-bottom:40px;">
-        <img src="TU_URL_DE_FOTO"
-             alt="Foto de Patricia"
-             style="
-                width:170px;
-                height:170px;
-                border-radius:50%;
-                object-fit:cover;
-                box-shadow:0 4px 15px rgba(15, 23, 42, 0.8);
-                border:3px solid rgba(248, 250, 252, 0.9);
-             ">
-    </section>
+<!-- ---------------------- -->
+<!-- INICIO -->
+<!-- ---------------------- -->
 
-    <div class="contenedor">
+<section id="inicio" class="header-box">
+    <h1>✨ Portafolio Tecnológico</h1>
+    <h2>Patricia Salazar Arancibia</h2>
+    <p>Administrativa · Traductora · Backend Trainee (Java & Spring Boot)</p>
 
-        <!-- ENCABEZADO -->
-        <div class="tarjeta fade-in">
-            <div style="padding:24px;">
-                <h1 style="font-size:32px; font-weight:700; margin-bottom:8px;">Portafolio Tecnológico</h1>
-                <h2 style="font-size:22px; font-weight:600; margin-top:0;">PATRICIA SALAZAR ARANCIBIA</h2>
-                <p style="margin-top:8px;">Administrativa · Traductora · Backend Trainee (Java & Spring Boot)</p>
-                <p style="margin-top:8px;">En transición al mundo tecnológico, uniendo experiencia administrativa con desarrollo de software.</p>
-            </div>
-        </div>
+    <img class="foto" src="https://i.imgur.com/Hju43Su.jpeg" alt="Foto de Patricia">
 
-        <!-- SOBRE MÍ -->
-        <div class="tarjeta fade-in" id="sobre-mi">
-            <div style="padding:24px;">
-                <h2 style="font-size:26px; font-weight:600;">Sobre mí</h2>
-                <p>Soy traductora inglés–español y profesional administrativa con más de diez años de experiencia en gestión de datos, documentación, atención de clientes y coordinación de procesos.</p>
-                <p>Actualmente estoy en transición al mundo tecnológico, especializándome en <strong>desarrollo backend con Java y Spring Boot</strong>.</p>
+    <div class="header-icons">
+        <a href="mailto:angblanco@hotmail.com">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg">
+        </a>
+        <a href="https://www.linkedin.com/in/patricia-salazar-697a56368/" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
+        </a>
+        <a href="https://github.com/angblanco2328" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+        </a>
+    </div>
+</section>
 
-                <p>Me interesa especialmente:</p>
-                <ul>
-                    <li>Diseñar soluciones simples, claras y mantenibles</li>
-                    <li>Integrar procesos administrativos con herramientas digitales</li>
-                    <li>Documentar y comunicar de forma profesional y pedagógica</li>
-                </ul>
-            </div>
-        </div>
+<!-- ---------------------- -->
+<!-- SOBRE MÍ -->
+<!-- ---------------------- -->
 
-        <!-- TECNOLOGÍAS -->
-        <div class="acordeon fade-in">
-            <div class="acordeon-titulo">
-                Tecnologías y herramientas
-                <span class="flecha">▶</span>
-            </div>
+<section id="sobre-mi">
+    <h2>🍃 Sobre mí</h2>
+    <p>
+        Soy traductora inglés–español y profesional administrativa con más de diez años de experiencia en gestión de datos, documentación, atención a clientes y coordinación de procesos.
+        Actualmente estoy en transición al mundo tecnológico, especializándome en desarrollo backend con Java y Spring Boot.
+    </p>
+    <ul>
+        <li>Diseñar soluciones simples, claras y mantenibles</li>
+        <li>Integrar procesos administrativos con herramientas digitales</li>
+        <li>Documentar y comunicar de forma profesional y pedagógica</li>
+    </ul>
+</section>
 
-            <div class="acordeon-contenido">
-                <table>
-                    <tr>
-                        <th>Área</th>
-                        <th>Tecnologías / Herramientas</th>
-                    </tr>
-                    <tr>
-                        <td><strong>Lenguajes</strong></td>
-                        <td>Java · SQL</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Frameworks</strong></td>
-                        <td>Spring Boot · Spring Data JPA · Thymeleaf · Maven</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Bases de datos</strong></td>
-                        <td>MariaDB</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Control de versiones</strong></td>
-                        <td>Git · GitHub</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Entorno</strong></td>
-                        <td>VS Code</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Otros</strong></td>
-                        <td>ERP Softland · Sistemas administrativos · Microsoft Office · Inglés avanzado · Francés intermedio</td>
-                    </tr>
-                </table>
-            </div>
+<!-- ---------------------- -->
+<!-- STACK TECNOLÓGICO -->
+<!-- ---------------------- -->
+
+<section id="stack">
+    <h2>🛠️ Stack Tecnológico</h2>
+
+    <div class="stack-grid">
+
+        <div class="stack-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+            <p><strong>Java 17 / 21</strong></p>
         </div>
 
-        <!-- PROYECTO TÉCNICO -->
-        <div class="acordeon fade-in">
-            <div class="acordeon-titulo">
-                Proyecto técnico destacado
-                <span class="flecha">▶</span>
-            </div>
-
-            <div class="acordeon-contenido">
-                <h3>Gestión de Cursos – <strong>Módulo Matrículas</strong></h3>
-
-                <p><strong>Descripción:</strong> Aplicación web desarrollada con Java y Spring Boot para gestionar estudiantes, cursos y matrículas.</p>
-
-                <p>El módulo de Matrículas permite:</p>
-                <ul>
-                    <li>Registrar inscripciones</li>
-                    <li>Editar y eliminar registros</li>
-                    <li>Visualizar información de forma clara y ordenada</li>
-                </ul>
-
-                <p><strong>Rol:</strong> Desarrollo backend y vistas con Thymeleaf.</p>
-
-                <p><strong>Tecnologías utilizadas:</strong> Java · Spring Boot · Spring Data JPA · Hibernate · MariaDB · Thymeleaf · Bootstrap · GitHub</p>
-
-                <p><strong>Repositorio:</strong> (agrega aquí tu enlace)</p>
-            </div>
+        <div class="stack-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg">
+            <p><strong>Spring Boot 3</strong></p>
         </div>
 
-        <!-- CASO DE ESTUDIO -->
-        <div class="acordeon fade-in">
-            <div class="acordeon-titulo">
-                Caso de estudio
-                <span class="flecha">▶</span>
-            </div>
-
-            <div class="acordeon-contenido">
-                <h3>OTEC Primavera – Diseño de producto digital</h3>
-
-                <p><strong>Contexto:</strong> Diseño conceptual de un producto digital para una OTEC ficticia llamada <strong>OTEC Primavera</strong>, orientada al sector educativo–formativo.</p>
-
-                <p><strong>Enfoque del trabajo:</strong></p>
-                <ul>
-                    <li>Análisis de necesidades académicas y administrativas</li>
-                    <li>Definición de funcionalidades clave</li>
-                    <li>Estructura de módulos y flujos de información</li>
-                    <li>Visión de integración futura con sistemas de gestión y reportes</li>
-                </ul>
-            </div>
+        <div class="stack-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg">
+            <p><strong>MariaDB</strong></p>
         </div>
 
-        <!-- FODA -->
-        <div class="acordeon fade-in" id="foda">
-            <div class="acordeon-titulo">
-                FODA profesional
-                <span class="flecha">▶</span>
-            </div>
-
-            <div class="acordeon-contenido">
-                <table>
-                    <tr>
-                        <th>Fortalezas</th>
-                        <th>Oportunidades</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            Comunicación clara y profesional<br>
-                            Organización y gestión de procesos<br>
-                            Aprendizaje rápido<br>
-                            Experiencia en sistemas administrativos<br>
-                            Orientación al detalle
-                        </td>
-                        <td>
-                            Crecimiento del sector tecnológico, fintech y edtech<br>
-                            Demanda de perfiles en transición hacia TI<br>
-                            Ecosistema Java activo<br>
-                            Modalidad de trabajo remoto e híbrido
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <th>Debilidades</th>
-                        <th>Amenazas</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            Experiencia técnica aún en desarrollo<br>
-                            Pocos proyectos de producción<br>
-                            Necesidad de profundizar en patrones de diseño y testing
-                        </td>
-                        <td>
-                            Competencia con perfiles más experimentados<br>
-                            Cambios rápidos de tecnologías<br>
-                            Procesos de selección exigentes
-                        </td>
-                    </tr>
-                </table>
-            </div>
+        <div class="stack-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/thymeleaf/thymeleaf-original.svg">
+            <p><strong>Thymeleaf</strong></p>
         </div>
 
-        <!-- EXPERIENCIA -->
-        <div class="acordeon fade-in">
-            <div class="acordeon-titulo">
-                Experiencia profesional
-                <span class="flecha">▶</span>
-            </div>
-
-            <div class="acordeon-contenido">
-                <h3>Área administrativa</h3>
-                <ul>
-                    <li>Gestión de datos, documentación y archivos</li>
-                    <li>Atención a clientes internos y externos</li>
-                    <li>Coordinación de procesos y apoyo a gerencias</li>
-                    <li>Manejo de sistemas internos y comunicación profesional</li>
-                </ul>
-
-                <h3>Área hotelera</h3>
-                <ul>
-                    <li>Atención a huéspedes</li>
-                    <li>Coordinación operativa diaria</li>
-                    <li>Soporte a equipos internacionales (incluyendo Proyecto ALMA)</li>
-                </ul>
-
-                <h3>Área de turismo</h3>
-                <ul>
-                    <li>Organización de itinerarios y gestión de grupos</li>
-                    <li>Orientación cultural e histórica</li>
-                    <li>Apoyo logístico en terreno</li>
-                </ul>
-            </div>
+        <div class="stack-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+            <p><strong>Git / GitHub</strong></p>
         </div>
 
-        <!-- CONTACTO -->
-        <div class="acordeon fade-in" id="contacto">
-            <div class="acordeon-titulo">
-                Contacto
-                <span class="flecha">▶</span>
-            </div>
-
-            <div class="acordeon-contenido">
-
-                <div style="text-align:center;">
-
-                    <!-- Ícono LinkedIn -->
-                    <a href="https://www.linkedin.com/in/TU-LINK-AQUI" target="_blank" style="margin-right:25px;">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                             alt="LinkedIn"
-                             style="width:55px; height:55px;">
-                    </a>
-
-                    <!-- Ícono GitHub -->
-                    <a href="https://github.com/angblanco2328" target="_blank">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                             alt="GitHub"
-                             style="width:55px; height:55px;">
-                    </a>
-
-                </div>
-
-                <p style="text-align:center; margin-top:20px; opacity:0.7;">
-                    Conecta conmigo en mis redes profesionales.
-                </p>
-
-            </div>
+        <div class="stack-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
+            <p><strong>VS Code</strong></p>
         </div>
 
     </div>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-        © 2025 Patricia Salazar — Portafolio en evolución constante.
-    </footer>
+<!-- ---------------------- -->
+<!-- FODA CANVAS TECH -->
+<!-- ---------------------- -->
 
-    <!-- BOTÓN VOLVER ARRIBA -->
-    <button id="backToTop">↑</button>
+<section id="foda">
+    <h2>🧭 FODA</h2>
 
-    <!-- SCRIPT ACORDEÓN + MODO CLARO/OSCURO + VOLVER ARRIBA -->
-    <script>
-    // Acordeones
-    document.querySelectorAll('.acordeon-titulo').forEach(titulo => {
-        titulo.addEventListener('click', () => {
-            const contenido = titulo.nextElementSibling;
-            const flecha = titulo.querySelector('.flecha');
+    <div class="foda-grid">
 
-            if (contenido.style.maxHeight) {
-                contenido.style.maxHeight = null;
-                contenido.classList.remove('abierto');
-                flecha.classList.remove('abierta');
-            } else {
-                contenido.style.maxHeight = contenido.scrollHeight + "px";
-                contenido.classList.add('abierto');
-                flecha.classList.add('abierta');
-            }
-        });
-    });
+        <div class="foda-card fortaleza">
+            <h3>🛡️ Fortalezas</h3>
+            <ul>
+                <li>Comunicación clara y profesional</li>
+                <li>Organización y gestión de datos</li>
+                <li>Aprendizaje rápido y adaptable</li>
+                <li>Experiencia administrativa sólida</li>
+            </ul>
+        </div>
 
-    // Modo claro/oscuro
-    const toggleBtn = document.getElementById('toggleTheme');
-    toggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('light');
-    });
+        <div class="foda-card oportunidad">
+            <h3>📈 Oportunidades</h3>
+            <ul>
+                <li>Crecimiento del sector tecnológico</li>
+                <li>Demanda de perfiles en transición</li>
+                <li>Ecosistema Java en expansión</li>
+                <li>Trabajo remoto/híbrido</li>
+            </ul>
+        </div>
 
-    // Botón volver arriba
-    const backToTop = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            backToTop.style.display = 'flex';
-        } else {
-            backToTop.style.display = 'none';
-        }
-    });
+        <div class="foda-card debilidad">
+            <h3>🧩 Debilidades</h3>
+            <ul>
+                <li>Pocos proyectos productivos aún</li>
+                <li>Profundizar en patrones y testing</li>
+            </ul>
+        </div>
 
-    backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-    </script>
+        <div class="foda-card amenaza">
+            <h3>🛑 Amenazas</h3>
+            <ul>
+                <li>Competencia con perfiles senior</li>
+                <li>Rápida evolución de tecnologías</li>
+                <li>Procesos de selección exigentes</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- ---------------------- -->
+<!-- EXPERIENCIA -->
+<!-- ---------------------- -->
+
+<section id="experiencia">
+    <h2>🗂️ Experiencia profesional</h2>
+
+    <div class="card">
+        <h3>Área administrativa</h3>
+        <p>Gestión de datos, documentación, atención a clientes, coordinación de procesos y uso de ERP Softland.</p>
+    </div>
+
+    <div class="card" style="margin-top:20px;">
+        <h3>Traducción inglés–español</h3>
+        <p>Traducción técnica, documentación interna, manuales y material de apoyo.</p>
+    </div>
+
+    <div class="card" style="margin-top:20px;">
+        <h3>Backend Trainee (Java & Spring Boot)</h3>
+        <p>Desarrollo de aplicaciones web con Java, Spring Boot, JPA, Thymeleaf y MariaDB.</p>
+    </div>
+</section>
+
+<!-- ---------------------- -->
+<!-- PROYECTO TÉCNICO -->
+<!-- ---------------------- -->
+
+<section id="proyecto">
+    <h2>🚀 Proyecto técnico destacado</h2>
+
+    <div class="card">
+        <h3>Gestión de Cursos – Módulo Matrículas</h3>
+        <p>Aplicación web para gestionar estudiantes, cursos y matrículas.</p>
+        <ul>
+            <li>Registro, edición y eliminación de matrículas</li>
+            <li>Listados claros y ordenados</li>
+            <li>Integración con base de datos MariaDB</li>
+        </ul>
+        <p><strong>Rol:</strong> Backend + vistas con Thymeleaf</p>
+        <p><strong>Stack:</strong> Java · Spring Boot · JPA · MariaDB · Thymeleaf · Bootstrap</p>
+    </div>
+</section>
+
+<!-- ---------------------- -->
+<!-- CASO DE ESTUDIO -->
+<!-- ---------------------- -->
+
+<section id="caso-estudio">
+    <h2>📘 Caso de estudio</h2>
+
+    <div class="card">
+        <h3>OTEC Primavera – Diseño de producto digital</h3>
+        <p>Diseño conceptual de un producto digital para una OTEC ficticia orientada al sector educativo–formativo.</p>
+        <ul>
+            <li>Análisis de necesidades</li>
+            <li>Definición de funcionalidades</li>
+            <li>Diseño de módulos</li>
+            <li>Flujo de información</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ---------------------- -->
+<!-- CONTACTO -->
+<!-- ---------------------- -->
+
+<section id="contacto">
+    <h2>✉️ Contacto</h2>
+
+    <p><strong>Correo:</strong> <a href="mailto:angblanco@hotmail.com" style="color:#4f9cf9;">angblanco@hotmail.com</a></p>
+
+    <p>
+        <a href="https://www.linkedin.com/in/patricia-salazar-697a56368/" target="_blank" style="color:#4f9cf9;">
+            LinkedIn
+        </a>
+    </p>
+
+    <p>
+        <a href="https://github.com/angblanco2328" target="_blank" style="color:#4f9cf9;">
+            GitHub
+        </a>
+    </p>
+</section>
+
+<!-- ---------------------- -->
+<!-- FOOTER -->
+<!-- ---------------------- -->
+
+<footer>
+    ✨ Portafolio en evolución constante, igual que mi camino en tecnología ✨
+</footer>
 
 </body>
 </html>

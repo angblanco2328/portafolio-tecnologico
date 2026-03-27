@@ -10,7 +10,7 @@
   <div>
     <h1 style="margin-bottom:0;">🌞 Portafolio Tecnológico</h1>
     <h2 style="margin-top:5px;">Patricia Salazar Arancibia</h2>
-    <p>Administrativa · Traductora · Backend Trainee (Java & Spring Boot)</p>
+    <p>Administrativa · Traductora · Front-End, Backend Trainee (Java & Spring Boot)</p>
   </div>
 
   <!-- ICONOS DE CONTACTO ARRIBA A LA DERECHA -->
